@@ -23,7 +23,7 @@ namespace ClaseDosProgramacionDos
         {
             double rta;
             rta = numUno + numDos;
-            Console.WriteLine("El resultado de la suma es: " + rta);
+            Console.WriteLine("El resultado de la suma  entre "+numUno+" y "+numDos+" es: " + rta);
             
 
         }
@@ -31,14 +31,14 @@ namespace ClaseDosProgramacionDos
         {
             double rta;
             rta=numUno-numDos;
-            Console.WriteLine("El resultado de la resta es: "+ rta);
+            Console.WriteLine("El resultado de la resta  entre " + numUno + " y " + numDos + " es: " + rta);
             
         }
         private static void multiplicar(double numUno, double numDos)
         {
             double rta;
             rta = numUno * numDos;
-            Console.WriteLine("El resultado de la multiplicacion es: "+numUno * numDos);
+            Console.WriteLine("El resultado de la multiplicacion  entre " + numUno + " y " + numDos + " es: " + rta);
             
 
         }
@@ -51,7 +51,7 @@ namespace ClaseDosProgramacionDos
     {
                 double rta;
                 rta = numUno / numDos;
-                Console.WriteLine("El resultado es: " + rta);
+                Console.WriteLine("El resultado de la division  entre " + numUno + " y " + numDos + " es: " + rta);
 
             }
             else
@@ -82,6 +82,26 @@ namespace ClaseDosProgramacionDos
 
         public static void calcular(double numUno, double numDos, string operacion)
         {
+            
+            
+            switch (operacion)
+            { 
+                case "+":
+                    calculadora.sumar(numUno, numDos);
+                    break;
+                case "-":
+                    calculadora.restar(numUno, numDos);
+                    break;
+                case "/":
+                    calculadora.dividir(numUno, numDos);
+                    break;
+                case "*":
+                    calculadora.multiplicar(numUno, numDos);
+                    break;
+  
+            }
+
+            
         }
 
     }
