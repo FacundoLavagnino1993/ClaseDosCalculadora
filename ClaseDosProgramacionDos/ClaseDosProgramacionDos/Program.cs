@@ -17,12 +17,15 @@ namespace ClaseDosProgramacionDos
            
             double numUno=10;
             double numDos=20;
+            double numTres = 30;
+            double max;
             string operacion;
             
 
-            Console.WriteLine("Calculadora.\nIngrese la operacion a realizar: + to suma - to resta * to multiplica / to dividir ");
+            Console.WriteLine("Calculadora.\nIngrese la operacion a realizar: + to suma || - to resta || * to multiplica || / to dividir ");
             operacion = Console.ReadLine();
             calculadora.calcular(numUno, numDos, operacion);
+
             Console.ReadLine();
             
             /*
